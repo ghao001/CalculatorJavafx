@@ -42,7 +42,7 @@
                   <Font name="Helvetica Light" size="40.0" />
                </font>
             </Button>
-            <Button id="#del" fx:id="del" alignment="CENTER" layoutX="123.0" layoutY="10.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="113.0" style="-fx-border-color: white; -fx-background-color: black;" text="Del" textFill="WHITE" GridPane.columnIndex="1">
+            <Button id="#del" fx:id="del" alignment="CENTER" layoutX="123.0" layoutY="10.0" mnemonicParsing="false" onAction="#delAction" prefHeight="88.0" prefWidth="113.0" style="-fx-border-color: white; -fx-background-color: black;" text="Del" textFill="WHITE" GridPane.columnIndex="1">
                <font>
                   <Font name="Helvetica Light" size="39.0" />
                </font>
@@ -122,7 +122,7 @@
                   <Font name="Helvetica Light" size="40.0" />
                </font>
             </Button>
-            <Button id="#point" fx:id="dot" alignment="CENTER" layoutX="123.0" layoutY="338.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="113.0" style="-fx-border-color: white; -fx-background-color: black;" text="." textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <Button id="#point" fx:id="dot" alignment="CENTER" layoutX="123.0" layoutY="338.0" mnemonicParsing="false" onAction="#pointAction" prefHeight="88.0" prefWidth="113.0" style="-fx-border-color: white; -fx-background-color: black;" text="." textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
                <font>
                   <Font name="Helvetica Light" size="40.0" />
                </font>

@@ -73,25 +73,21 @@ public class Controller implements Initializable {
         equalAction();
         op = '+';
         result = Double.parseDouble(textArea.getText());
-        reset=true;
     }
     public void minusAction(){
         equalAction();
         op = '-';
         result = Double.parseDouble(textArea.getText());
-        reset=true;
     }
     public void multAction(){
         equalAction();
         op = '*';
         result = Double.parseDouble(textArea.getText());
-        reset=true;
     }
     public void divideAction(){
         equalAction();
         op = '/';
         result = Double.parseDouble(textArea.getText());
-        reset=true;
     }
     public void equalAction(){
         calculate(Double.parseDouble(textArea.getText()));
@@ -106,6 +102,17 @@ public class Controller implements Initializable {
         textArea.setText("");
 
     }
+
+    public void pointAction(){
+        if(!textArea.getText().contains(".")){
+            textArea.appendText(".");
+        }
+    }
+
+    public void delAction(){
+        textArea.deleteText(textArea.getText().length()-1,textArea.getText().length());
+    }
+
     public void calculate(double inNum){
         switch (op){
             case '+':
